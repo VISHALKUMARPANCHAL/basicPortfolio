@@ -27,10 +27,6 @@ body {
     padding: 10px 10%;
 }
 
-/* ul {
-    margin-left: 400px;
-} */
-
 nav {
     display: flex;
     align-items: center;
@@ -78,4 +74,114 @@ nav ul li a:hover:after {
 
 .header-text h1 span {
     color: #FF1338;
+}
+
+
+/* ************************** */
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row img {
+    box-shadow: 5px 5px 110px #b55454, -10px -10px 20px #2f1d1d;
+    width: 88%;
+    border-radius: 55% 45% 75% 25% / 78% 77% 29% 28%;
+
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+/* .about-col-2 {
+    width: 60%;
+} */
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+    position: relative;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #FF1338;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contants ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contants ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contants {
+    display: none;
+}
+
+.tab-contants.active-tab {
+    display: block;
+}
+
+#Skills ul,
+#Education ul {
+    display: flex;
+}
+
+.right {
+    margin-left: 80px;
+}
+
+.first {
+    width: 150px;
+}
+
+.second {}
+
+.third {
+    margin-left: 10px;
+}
+
+:root {
+    scroll-behavior: smooth;
 }

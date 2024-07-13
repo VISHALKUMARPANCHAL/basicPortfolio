@@ -20,7 +20,7 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
                         <a href="#">Skills</a>
@@ -40,7 +40,96 @@
             </div>
         </div>
     </div>
+    <!-- ----------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/profile-img.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Myself Vishal Panchal. I am from Prantij,Sabarkantha. I am Final year student in Computer
+                        Engineering branch at Vishwakarma Government Engineering Collage, Chandkheda. Which is
+                        affiliated to Gujarat Technological University.I am a Fresher Student. I Have Knowledge About
+                        Full Stack Web Development. To Work With An Organization Where Can Learn New Skills And Increase
+                        My Abilities For The Organizational Goals As Well As Myself.
 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Basic details</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Internships</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education details</p>
+                    </div>
+                    <div class="tab-contants active-tab" id="Skills">
+                        <ul>
+                            <div class="left">
+                                <li><span>Birthday</span><br>27 March 2004</li>
+                                <li><span>Age</span><br>20</li>
+                                <li><span>Collage</span><br>VGEC, Ahmedabad</li>
+                                <li><span>Email</span><br>vishalvishal00339@gmail.com</li>
+                            </div>
+                            <div class="right">
+                                <li><span>Phone</span><br>+91 74859 47910</li>
+                                <li><span>Degree</span><br>Bachelor of Engineering</li>
+                                <li><span>City</span><br>Prantij, Sabarkantha</li>
+                                <li><span>CurrentSemester</span><br>7th</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="Experience">
+                        <ul>
+                            <h4>2 WEEKS SUMMER INTERNSHIP</h4>
+                            <li><span>Duration</span><br>2Weeks(29June-12July/2024)</li>
+                            <li><span>Company</span><br>QueryFinders Solution, Ahmedabad</li>
+                            <li><span>Details</span><br>In this 2 weeks summer internship i start it in starting of my
+                                final year(7th sem). in this i lern many new skills and technologies like reactJS,
+                                nodejs, expressjs, Mongodb and many more on that i make a project named superseminar.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="Education">
+                        <ul>
+                            <div class="first">
+                                <h4>BACHELOR OF ENGINEERING</h4>
+                                <li><span>Year</span><br>2021 - present </li>
+                                <li><span>Collage</span><br>VGEC, Ahmedabad </li>
+                                <li><span>CGPA</span><br>7.87CGPA</li>
+                            </div>
+
+                            <div class="second">
+                                <h4>12TH SCIENCE <br>(HSC)</h4>
+                                <li><span>Year</span><br>2021 - present </li>
+                                <li><span>School</span><br>Taxashila Vidhyalaya </li>
+                                <li><span>Percentage</span><br>85.69%</li>
+                            </div>
+
+                            <div class="third">
+                                <h4>10TH STANDARD <br>(SSC)</h4>
+                                <li><span>Year</span><br>2018 - 2019 </li>
+                                <li><span>School</span><br>Taxashila Vidhyalaya </li>
+                                <li><span>Percentage</span><br>85.00%</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contants');
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 
 </html>
