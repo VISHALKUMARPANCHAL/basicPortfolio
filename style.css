@@ -308,11 +308,12 @@ nav ul li a:after {
     margin-bottom: 5px;
 }
 
+
 .layer a {
     margin-top: 1px;
     color: #ff004f;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 20px;
     line-height: 30px;
     background-color: #fff;
     width: 30px;
@@ -541,4 +542,8 @@ form .btn2 {
         height: 83px;
         width: 150px;
     }
+}
+
+.skill1 {
+    line-height: 2;
 }
