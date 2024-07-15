@@ -58,7 +58,7 @@ nav ul li a:after {
     transition: 0.5s;
 }
 
-nav ul li a:hover:after {
+.lis a:hover:after {
     width: 100%;
 }
 
@@ -68,8 +68,9 @@ nav ul li a:hover:after {
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
+
 }
 
 .header-text h1 span {
@@ -110,11 +111,18 @@ nav ul li a:hover:after {
 /* .about-col-2 {
     width: 60%;
 } */
+#active {
+    color: #FF1338;
+}
 
 .subtitle {
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 45px;
+    font-weight: 550;
     color: #fff;
+}
+
+.subtitle span {
+    color: #FF1338;
 }
 
 .tab-titles {
@@ -482,4 +490,55 @@ form .btn2 {
     cursor: none;
     border-color: #262626;
     background-color: #07ff66;
+}
+
+
+/* ********************************** */
+
+@media only screen and (max-width:600px) {
+
+    .header-text {
+        margin-top: 35%;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .about-col-2 {
+        width: 100%;
+    }
+
+    .right {
+        margin-left: 0px;
+    }
+
+    .tab-links {
+        margin-right: 30px;
+    }
+
+    .project-list {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+
+    .layer {
+        padding: 0;
+    }
+
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+
+
+    .logo {
+        height: 83px;
+        width: 150px;
+    }
 }
